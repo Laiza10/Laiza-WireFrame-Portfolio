@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0077;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.about-section .container {
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 952px) {
+    .container {
+        padding: 0 40px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        font-size: 26px;
+        margin-top: 5px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2b2b2b;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        background: none;
+        color: #df003b;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+/* Your existing CSS styles */
+
+/* New styles for image galleries */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container {
+    max-width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-description {
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.image-description h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.image-description p {
+    font-size: 14px;
+    color: #666;
+}
